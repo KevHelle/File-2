@@ -1,3 +1,11 @@
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -19,6 +27,12 @@ li a {
 }
 
 li a:hover {
-    background-color: #1bf107;
+    background-color: #40f808;
 }
 
+
+
+h1{
+    color:#40f808;
+
+}
