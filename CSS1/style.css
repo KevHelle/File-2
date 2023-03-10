@@ -1,8 +1,12 @@
+/*ol est un élémnt natif
+.ol est une classe
+#ol est un id*/
 
-
-h1 {color: yellow;}
-
-h1 {font-size: x-large;}
+/*todo: enlever ou fusionner les doublons*/
+h1 {
+    color: rgb(42, 20, 235);
+     font-size: x-large;
+    }
 
 h2 {color:rgb(0, 0, 0);}
 
@@ -27,8 +31,11 @@ ul {text-align : center;display:inline-block}
     border: 2px solid rgb(24, 25, 26);
       border-collapse: collapse;
     }
+.centered {
+    text-align: center;
 
-body{background-color: aqua;}
+}
+body{background-color: rgb(237, 248, 248);}
 
 .container{text-align: center;}
 .container1 {text-align: center;}
@@ -37,3 +44,54 @@ body{background-color: aqua;}
 display: flex;
 align-items: center ;
 box-shadow: 0px 3px 15px red;}
+
+#footer p {
+    margin-top: 100px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+ #footer {
+    vertical-align: bottom; 
+    position: absolute;
+    bottom: 0;  
+}
+.relative {
+    position:relative;
+}
+.hauteurMax {
+    min-height: 100vh;
+}
+ol {
+    list-style-position: inside;
+    text-align: left;
+    list-style-position: inside;
+    padding-inline-start: 23em;
+        
+}
+  
+  body > div > div.centered > ol {
+    text-align: left;
+}
+.total {
+    background-color: #FDF1B7;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    min-width: 80vw; 
+    min-height: 60vh;
+    margin-top: 3em;
+    padding-top: 3em;
+}
+
+body > div > div.liens > nav > ul > li {
+    display: inline-block !important;
+}
+nav > ul {
+    padding-inline-start: 10px;
+}
+nav > ul > li {
+    margin-left: 1em;
+
+}
