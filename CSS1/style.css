@@ -32,9 +32,12 @@ ul {text-align : center;display:inline-block}
 
     border: 2px solid rgb(24, 25, 26);
       border-collapse: collapse;
+      
+      ;
     }
 .centered {
     text-align: center;
+    
 
 }
 body{background-color: rgb(237, 248, 248);}
