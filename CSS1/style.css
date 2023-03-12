@@ -4,53 +4,88 @@
 
 /*todo: enlever ou fusionner les doublons*/
 h1 {
-    color: rgb(42, 20, 235);
-     font-size: x-large;
-     text-align: center; 
-    }
-
-h2 {color:rgb(0, 0, 0);}
-
-p{color:rgb(20, 19, 19)}
-
-    
-h2 {align-content: center; 
-    text-align: center;}
-
-
-h2 { font-size:x-large}
-
-ul {text-align : center;display:inline-block}
-
-
-  p{font-size:130%;}
-
-  .tableau {text-align:center;}
-
-
-  table, caption, th, td {
-
-    border: 2px solid rgb(24, 25, 26);
-      border-collapse: collapse;
-      
-      ;
-    }
-.centered {
+    color: #E74C3C;
+    font-size: x-large;
     text-align: center;
-    
+}
+
+p {
+    color: white;
+}
+
+.padding {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h2 {
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+    color: white;
 
 }
-body{background-color: rgb(237, 248, 248);}
 
-.container{text-align: center;}
-.container1 {text-align: center;}
 
-.navigation { padding: 10px 100px;
-display: flex;
-align-items: center ;
-box-shadow: 0px 3px 15px rgb(68, 0, 255);}
+ul {
+    text-align: center;
+    display: inline-block
+}
 
-.navigation a{
+
+p {
+    font-size: 130%;
+}
+
+.tableau {
+    text-align: center;
+}
+
+table,
+caption,
+th,
+td {
+
+    border: 2px solid rgb(24, 25, 26);
+    border-collapse: collapse;
+    background-color: yellow;
+}
+
+/* vw stand for viewport width */
+table {
+    min-width: 23vw;
+    margin-left: 37vw;
+
+}
+
+.background {
+    background-image: url('../pexels-photo-5821036.webp');
+}
+
+.centered {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(237, 248, 248);
+}
+
+.container {
+    text-align: center;
+}
+
+.container1 {
+    text-align: center;
+}
+
+.navigation {
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 15px rgb(68, 0, 255);
+}
+
+.navigation a {
     color: #868681;
 }
 
@@ -60,107 +95,118 @@ box-shadow: 0px 3px 15px rgb(68, 0, 255);}
     bottom: 20px;
     right: 20px;
     text-align: center;
+    color: black;
 }
- #footer {
-    vertical-align: bottom; 
+
+#footer {
+    vertical-align: bottom;
     position: absolute;
-    bottom: 0;  
+    bottom: 0;
 }
-body{min-height: 110vh;
-    position:relative;
+
+html  {
+    min-height: 100vh;
+    position: relative;
 }
+
 .hauteurMax {
     min-height: 100vh;
 }
+
 ol {
     list-style-position: inside;
-    text-align:justify;
+    text-align: justify;
     list-style-position: inside;
     padding-inline-start: 23em;
-        
+
 }
-  
-  body > div > div.centered > ol {
+
+body>div>div.centered>ol {
     text-align: left;
 }
+
 .total {
     background-color: #FDF1B7;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    min-width: 80vw; 
+    min-width: 80vw;
     min-height: 60vh;
     margin-top: 3em;
     padding-top: 3em;
+    color: white;
 }
 
-body > div > div.liens > nav > ul > li {
+body>div>div.liens>nav>ul>li {
     display: inline-block !important;
 }
-nav > ul {
+
+li {
+    color: white;
+}
+
+nav>ul {
     padding-inline-start: 10px;
 }
 
-   
-
-}
-nav 
-{
-    
-    width: 50%;
+nav {
     height: 100px;
     background: #48435C;
 }
- 
-nav .main_pages 
-{
+
+nav .main_pages {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
- 
-nav .main_pages a 
-{
-    width: 20%;
+
+nav .main_pages a {
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 2em;
+    margin-top: 2em;
     text-decoration: none;
     font-family: Arial, sans-serif;
     color: rgb(233, 20, 20);
+    border-radius: 5em;
+    border: 0.1em solid #5A5766;
+
 }
- 
-nav a:hover 
-{
-    background: #5A5766
+
+nav {
+    background-color: white;
 }
-label, #toggle
-{
+
+nav a:hover {
+    background: #5A5766;
+    font-weight: bold;
+    color: white;
+}
+
+label,
+#toggle {
     display: none;
 }
- 
-@media all and (max-width: 991px)
-{
-    nav
-    {
+
+@media all and (max-width: 991px) {
+    nav {
         height: 60px;
     }
- 
-    nav .main_pages 
-    {
+
+    nav .main_pages {
         display: none;
         flex-direction: column;
         background: #48435C;
         height: 220px;
     }
- 
+
     nav .main_pages a {
         width: 50%;
     }
- 
-    label 
-    {
+
+    label {
         width: 30px;
         display: flex;
         justify-content: center;
@@ -170,8 +216,36 @@ label, #toggle
         color: rgb(235, 16, 16);
         cursor: pointer;
     }
- 
-    #toggle:checked + .main_pages {
+
+    #toggle:checked+.main_pages {
         display: flex;
     }
+}
+
+.presentation {
+    padding-top: 1em;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 1.5em;
+    color: black;
+}
+
+.gradiantBackgound {
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+.marginBottoM {
+    margin-bottom: 8em;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+} 
+.paddingTopS {
+  padding-top: 2em;
+
+}
+.paddingBottomS {
+    padding-bottom: 2em;
 }
