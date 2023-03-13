@@ -8,9 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes passions</title>
     <link rel="stylesheet" href="CSS1/style.css">
+
+
 </head>
 
+
 <body>
+
     <nav>
         <label for="toggle">☰</label>
         <input type="checkbox" id="toggle">
@@ -24,43 +28,57 @@
         </div>
     </nav>
 
-    <div class="centered gradiantBackgound marginBottoM padding">
 
-        <h1> Mes passions </h1>
 
-        <ul>
-            <li> Musique (écoute, pratique, chroniques, interviews sur webzine et podcasts)</li>
-            <figure>
-                <a href="Photos/chant.jpg"><img src="Photos/minichant.jpg" alt="Musique"> </a>
+    <button onclick="darkmode()">Darkmode</button>
+    <script>
+        function darkmode() {
+            var element = document.body;
+            element.classlist.toggle("dark");
+        }
 
-                <figcaption>Pratique musicale</figcaption>
-            </figure>
-        </ul>
+    </script>
+</body>
 
-        <li> Chant/vocaux/ programmateur MAO dans divers groupes <br>,
-            Chroniqueur et interviewer chez Yargla Webzine puis Magic Fire Music Webzine,
-            collectionneur cds/k7s/vinyles
-        </li>
+<div class="centered gradiantBackgound marginBottoM padding">
 
-        <h1>Lecture, Ecriture </h1>
+    <h1> Mes passions </h1>
 
-        
+    <ul>
+        <li> Musique (écoute, pratique, chroniques, interviews sur webzine et podcasts)</li>
         <figure>
-            <a href="Photos/minibook.jpg"><img src="Photos/tn_minibook.jpg" alt="S.King"> </a>
-            <figcaption> Lecture de Thrillers</figcaption>
+            <a href="Photos/chant.jpg"><img src="Photos/minichant.jpg" alt="Musique"> </a>
+
+            <figcaption>Pratique musicale</figcaption>
         </figure>
-        <ul>
-            <li>
+    </ul>
+
+    <li> Chant/vocaux/ programmateur MAO dans divers groupes <br>,
+        Chroniqueur et interviewer chez Yargla Webzine puis Magic Fire Music Webzine,
+        collectionneur cds/k7s/vinyles
+    </li>
+
+    <h1>Lecture, Ecriture </h1>
+
+
+    <figure>
+        <a href="Photos/minibook.jpg"><img src="Photos/tn_minibook.jpg" alt="S.King"> </a>
+        <figcaption> Lecture de Thrillers</figcaption>
+    </figure>
+    <ul>
+        <li>
             Goût prononcé pour la lecture de thrillers mais également de livres historiques,mythologiques puis
-                écriture de divers textes.
-            </li>
-        </ul>
+            écriture de divers textes.
+        </li>
+    </ul>
 
-    </div>
+</div>
 
-    <div id="footer">
-        <p>Kevin Helle. All rights reserved 2023.</p>
-    </div>
+<div id="footer">
+    <p>Kevin Helle. All rights reserved 2023.</p>
+</div>
+
+<div class="changeTheme">Switch theme </div>
 
 
 

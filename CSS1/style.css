@@ -3,8 +3,24 @@
 #ol est un id*/
 
 /*todo: enlever ou fusionner les doublons*/
+
+   
+   .dark{
+    background-color: black;
+    color: white;
+   }
+
+   button{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+
+
+
 h1 {
-    color: #E74C3C;
+    color: var(--ecriture);
     font-size: x-large;
     text-align: center;
 }
@@ -67,7 +83,7 @@ table {
 }
 
 body {
-    background-color: rgb(237, 248, 248);
+    background-color: var(--background);
 }
 
 .container {
@@ -252,3 +268,4 @@ figcaption {
 .paddingBottomS {
     padding-bottom: 2em;
 }
+
