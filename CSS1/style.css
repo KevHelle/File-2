@@ -193,6 +193,7 @@ label,
 @media all and (max-width: 991px) {
     nav {
         height: 60px;
+        
     }
 
     nav .main_pages {
@@ -200,10 +201,12 @@ label,
         flex-direction: column;
         background: #48435C;
         height: 220px;
+        
     }
 
     nav .main_pages a {
         width: 50%;
+        position: relative
     }
 
     label {
